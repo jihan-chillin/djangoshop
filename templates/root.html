@@ -1,22 +1,4 @@
-{% load django_bootstrap5 %}
-
-
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>장고쇼핑몰</title>
-        {% bootstrap_javascript %}
-        {% bootstrap_css %}
-    </head>
-    <body>
-        <h1>장고 쇼핑몰</h1>
-
-        <button class="btn btn-primary">하이</button>
-
-        <hr/>
-        &copy; 2024. All rights reserved
-        
-    </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <button class="btn btn-primary">버튼</button>
+{% endblock %}
