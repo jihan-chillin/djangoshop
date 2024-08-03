@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
+    path('',TemplateView.as_view(template_name="root.html")),
 ]
 
 # debug모드일 때, 해당 url 패턴을 추가하겠음.
